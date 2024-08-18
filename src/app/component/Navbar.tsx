@@ -71,18 +71,18 @@ const Header = () => {
                         <a href="/" onClick={handleClose}>
                             <li className="text-main-color-gray cursor-pointer hover:scale-105 mt-10">Home</li>
                         </a>
-                        <a href="/" onClick={handleClose}>
+                        <a href="/about" onClick={handleClose}>
                             <li className="text-main-color-gray cursor-pointer hover:scale-105 mt-10">About</li>
                         </a>
-                        <a href="/" onClick={handleClose}>
+                        <a href="/service" onClick={handleClose}>
                             <li className="text-main-color-gray cursor-pointer hover:scale-105 mt-10">Services</li>
                         </a>
-                        <a href="/" onClick={handleClose}>
+                        <a href="/contact" onClick={handleClose}>
                             <li className="text-main-color-gray cursor-pointer hover:scale-105 mt-10">Contact us</li>
                         </a>
-                        <a href="/" onClick={handleClose}>
+                        {/* <a href="/" onClick={handleClose}>
                             <li className="text-main-color-gray cursor-pointer hover:scale-105 mt-10">Get started</li>
-                        </a>
+                        </a> */}
                     </ul>
                 </div>
             </div>

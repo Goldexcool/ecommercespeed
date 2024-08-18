@@ -59,7 +59,7 @@ const SpecialService = () => {
             >
                 <Image src={who} alt='hero' className='w-full h-auto' />
                 <div 
-                    className='absolute right-4 top-2 w-[200px] h-[200px] bg-darker flex flex-col justify-center items-center rounded-full text-center'
+                    className='absolute right-4 top-2 md:w-[200px] md:h-[200px] w-[150px] h-[150px] bg-darker flex flex-col justify-center items-center rounded-full text-center'
                     data-aos="zoom-in"
                     data-aos-delay="300"
                 >

@@ -1,12 +1,22 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import contactImage from "../../../public/contact-us-communication-support-service-assistance-concept_53876-128103.jpg";
 import { Label } from "../component/ui/label";
 import { Input } from "../component/ui/contact"; 
 import { cn } from "@/lib/utils";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export function ContactPage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
@@ -15,18 +25,18 @@ export function ContactPage() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-[7rem] md:px-10 px-5 mx-auto p-8 mt-[3rem]">
       {/* Left Section - Image */}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center" data-aos="fade-right">
         <Image
           src={contactImage}
           alt="Contact us illustration"
           className="rounded-lg shadow-lg h-full w-full"
-        //   width={500}
-        //   height={500}
+          // width={500}
+          // height={500}
         />
       </div>
 
       {/* Right Section - Contact Form */}
-      <div className="bg-white dark:bg-black p-8 rounded-lg shadow-input">
+      <div className="bg-white dark:bg-black p-8 rounded-lg shadow-input" data-aos="fade-left">
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
           Get in Touch
         </h2>
@@ -36,19 +46,19 @@ export function ContactPage() {
         </p>
 
         <form className="my-8" onSubmit={handleSubmit}>
-          <LabelInputContainer className="mb-4">
+          <LabelInputContainer className="mb-4" data-aos="fade-up" data-aos-delay="200">
             <Label htmlFor="fullname">Full Name</Label>
             <Input id="fullname" placeholder="John Doe" type="text" />
           </LabelInputContainer>
-          <LabelInputContainer className="mb-4">
+          <LabelInputContainer className="mb-4" data-aos="fade-up" data-aos-delay="400">
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" placeholder="johndoe@example.com" type="email" />
           </LabelInputContainer>
-          <LabelInputContainer className="mb-4">
+          <LabelInputContainer className="mb-4" data-aos="fade-up" data-aos-delay="600">
             <Label htmlFor="subject">Subject</Label>
             <Input id="subject" placeholder="Your subject here" type="text" />
           </LabelInputContainer>
-          <LabelInputContainer className="mb-8">
+          <LabelInputContainer className="mb-8" data-aos="fade-up" data-aos-delay="800">
             <Label htmlFor="message">Message</Label>
             <textarea
               id="message"
@@ -61,6 +71,8 @@ export function ContactPage() {
           <button
             className="bg-gradient-to-br relative group/btn from-black dark:from-mainColor dark:to-darker to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
             type="submit"
+            data-aos="fade-up"
+            data-aos-delay="1000"
           >
             Send Message &rarr;
             <BottomGradient />

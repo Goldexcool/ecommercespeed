@@ -12,7 +12,7 @@ import ryan from '../../../public/ryan.svg'
 
 export function InfiniteMovingCardsDemo() {
     return (
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
+        <div className="md:h-[40rem] h-[55rem] rounded-md flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
             <div className="flex w-full justify-center items-center flex-col mt-[3rem]">
                 <h1 className="md:text-5xl text-3xl text-center mb-[0.5rem] text-slate-700 uppercase">What my clients say</h1>
                 <h2 className="md:text-2xl text-xl text-center mb-[2rem] text-slate-700 w-3/4">See what my clients have to say about working with me and the results I helped them achieve.</h2>
@@ -23,7 +23,7 @@ export function InfiniteMovingCardsDemo() {
                 speed="slow"
             />
             {/* New Stats Section */}
-            <div className="flex justify-between w-full lg:px-[7rem] md:px-10 px-5 mt-[4rem] gap-4 mb-[2rem] flex-wrap">
+            <div className="flex justify-between w-full lg:px-[7rem] md:px-10 px-5 md:mt-[4rem] mt-[4rem] gap-4 mb-[2rem] flex-wrap">
                 <div className="flex flex-col items-center">
                     <Counter end={23000} duration={3000} />
                     <span className="text-white text-xl">Happy Customers</span>

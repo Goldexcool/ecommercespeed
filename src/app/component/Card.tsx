@@ -29,7 +29,7 @@ export function CardHoverEffectDemo() {
           Our Services
         </h1>
         <h2 
-          className="text-[30px] mb-2"
+          className="text-[30px] mb-2 text-center"
           data-aos="fade-up"
           data-aos-delay="400"
         >

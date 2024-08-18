@@ -17,7 +17,7 @@ export function PlaceholdersAndVanishInputDemo() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value);
   };
-  
+
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("submitted");
@@ -44,25 +44,27 @@ export function PlaceholdersAndVanishInputDemo() {
       >
         Signup for our newsletter to get updates, information, news, insights, or promotions.
       </h2>
-      <form 
-        className="md:flex md:flex-row flex-col gap-4 items-center w-full max-w-lg justify-center"
-        onSubmit={onSubmit}
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        <PlaceholdersAndVanishInput
-          placeholders={placeholders}
-          onChange={handleChange}
+      <div className='w-full flex flex-col items-center'>
+        <form 
+          className="flex flex-col gap-4 items-center w-full max-w-lg"
           onSubmit={onSubmit}
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-mainColor text-base"
-        />
-        <Button
-          text="Sign Up" 
-          className="w-full md:w-auto mt-[0.5rem] md:mt-0"
           data-aos="fade-up"
-          data-aos-delay="600"
-        />
-      </form>
+          data-aos-delay="400"
+        >
+          <PlaceholdersAndVanishInput
+            placeholders={placeholders}
+            onChange={handleChange}
+            onSubmit={onSubmit}
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-mainColor text-base"
+          />
+          <Button
+            text="Sign Up" 
+            className="w-full md:w-auto mt-4 md:mt-0 py-2"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          />
+        </form>
+      </div>
     </div>
   );
 }
