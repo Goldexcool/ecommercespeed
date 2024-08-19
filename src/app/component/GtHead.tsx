@@ -28,7 +28,7 @@ export function ContactPageD() {
       <div className="flex justify-between md:flex-row flex-col mb-12 w-full items-start">
         <div className="md:w-1/2 w-full flex-col gap-2">
           <h1 className="text-3xl font-bold text-mainColor">
-            MiRATECH DIGITAL
+            ECOMMERCESPEED
           </h1>
           <div className="border-b-2 border-mainColor w-24 mt-1"></div>
           <h2 className="text-xl text-black mt-2">
