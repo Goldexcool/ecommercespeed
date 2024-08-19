@@ -24,7 +24,7 @@ export function InfiniteMovingCardsDemo() {
             />
             {/* New Stats Section */}
             <div className="flex justify-between w-full lg:px-[7rem] md:px-10 px-5 md:mt-[4rem] mt-[4rem] gap-4 mb-[2rem] flex-wrap items-center">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center justify-center">
                     <Counter end={1000} duration={3000} />
                     <span className="text-white md:text-xl text-[.9rem]">Happy Customers</span>
                 </div>
@@ -44,7 +44,6 @@ export function InfiniteMovingCardsDemo() {
                     <span className="text-white md:text-xl text-[.9rem]">Revenue Driven</span>
                 </div>
             </div>
-
         </div>
     );
 }

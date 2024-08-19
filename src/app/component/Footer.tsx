@@ -17,9 +17,9 @@ const Footer = () => {
                         <ul className="space-y-2 mt-[1rem]">
                             <li>Ecommercespeed specializes in digital marketing, dedicated to enhancing your online visibility and expanding your business reach.</li>
                             <div className='flex gap-2 items-start mt-4'>
-                                <FaFacebook className="text-white text-4xl group-hover:scale-110 text-center flex transition duration-300" />
-                                <FaInstagram className="text-white text-4xl group-hover:scale-110 text-center flex transition duration-300" />
-                                <FaWhatsapp className="text-white text-4xl group-hover:scale-110 text-center flex transition duration-300" />
+                                <a href="https://www.facebook.com/Ecommercespeed"><FaFacebook className="text-white text-4xl group-hover:scale-110 text-center flex transition duration-300" /></a>
+                                <a href='https://www.instagram.com/Ecommercespeed'><FaInstagram className="text-white text-4xl group-hover:scale-110 text-center flex transition duration-300" /></a>
+                                <a href='https://wa.link/1opll3'><FaWhatsapp className="text-white text-4xl group-hover:scale-110 text-center flex transition duration-300" /></a>
                             </div>
 
                         </ul>

@@ -26,7 +26,7 @@ export function ContactPageD() {
     <div className="px-5 py-10 lg:px-[7rem] md:px-10 mt-[3rem] w-full ">
       {/* Header Section */}
       <div className="flex justify-between md:flex-row flex-col mb-12 w-full items-start">
-        <div className="w-1/2 flex-col gap-2">
+        <div className="md:w-1/2 w-full flex-col gap-2">
           <h1 className="text-3xl font-bold text-mainColor">
             MiRATECH DIGITAL
           </h1>
@@ -35,7 +35,7 @@ export function ContactPageD() {
             Alone we can do so little, together we can do so much.
           </h2>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2 w-full">
           <h1 className="md:text-[1rem] text-[.8rem] font-bold text-gray-800">
             Ecommercespeed was founded with a singular vision: to empower businesses to achieve their full potential in the eCommerce space. With years of experience under our belts and a proven track record of success, we are the go-to experts for businesses looking to thrive in the competitive online market. Our approach is simple yet effective—we combine industry-leading technology with a deep understanding of consumer behavior to deliver results that speak for themselves.
           </h1>

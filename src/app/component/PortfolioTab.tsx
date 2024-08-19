@@ -137,7 +137,7 @@ export function TabsDemo() {
     ];
 
     return (
-        <div className="h-[34rem] md:h-[45rem] md:mt-[6rem] lg:mt-[7rem] sm:mt-[4rem] mt-[4rem] [perspective:1000px] relative flex flex-col mx-auto w-full items-start justify-start md:px-10 px-5">
+        <div className="h-[34rem] md:h-[45rem] md:mt-[6rem] mb-[3rem] lg:mt-[7rem] sm:mt-[4rem] mt-[4rem] [perspective:1000px] relative flex flex-col mx-auto w-full items-start justify-start md:px-10 px-5">
             <h1 className="text-4xl font-bold text-black dark:text-white mb-[1rem]">Portfolio</h1>
             <Tabs tabs={tabs} />
         </div>

@@ -7,7 +7,7 @@ import { Hover } from "./ui/Hover";
 
 export function BackgroundBeamsDemo() {
     return (
-        <div className="md:h-[40rem] h-[75rem] mb-[2rem] w-full rounded-md lg:px-[7rem] md:px-10 px-5 bg-black relative grid md:grid-cols-2 grid-cols-1 items-center justify-center antialiased ">
+        <div className="md:h-[40rem] h-[85rem] mb-[5rem] w-full rounded-md lg:px-[7rem] md:px-10 px-5 bg-black relative grid md:grid-cols-2 grid-cols-1 items-center justify-center antialiased ">
             <div className="w-full p-4  flex flex-col items-start gap-4 relative z-10 ">
                 <h2 className="md:text-5xl text-3xl font-bold text-neutral-200">Why Choose Us</h2>
                 <p className="md:text-xl text-[1rem] text-neutral-400">

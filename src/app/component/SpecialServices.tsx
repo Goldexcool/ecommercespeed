@@ -32,7 +32,7 @@ const SpecialService = () => {
 
     return (
         <section 
-            className='grid lg:grid-cols-2 md:grid-cols-1 gap-10 mx-auto lg:px-[7rem] md:px-10 px-5 mt-[6rem] mb-[2rem] md:mb-[0rem]' 
+            className='grid lg:grid-cols-2 md:grid-cols-1 gap-10 mx-auto lg:px-[7rem] md:px-10 px-5 md:mt-[6rem] mt-[12rem] mb-[2rem] md:mb-[0rem]' 
             id='home'
         >
             <div 
