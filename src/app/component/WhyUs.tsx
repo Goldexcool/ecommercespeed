@@ -18,7 +18,12 @@ export function BackgroundBeamsDemo() {
                     <li>Integrity: Building trust through transparency and ethical practices.</li>
                     <li>Excellence: Striving for the highest standards in everything we do.</li>
                     <li>Customer Success: Prioritizing our clients&apos; growth and satisfaction above all else.</li>
-                </ul><Button text="Get Started" className="mt-4" />
+                </ul>
+                <div className='flex gap-5 items-center'>
+                    <a href="/">
+                        <button className='w-fit px-6 py-5 bg-mainColor hover:bg-saturated md:text-[1.1rem] rounded-[10px] text-[1rem] text-white font-[500]'>Get started  →</button>
+                    </a>
+                </div>
             </div>
             <div className="grid gap-2 w-full">
                 <Hover items={projects} className="" />

@@ -12,7 +12,7 @@ import ryan from '../../../public/ryan.svg'
 
 export function InfiniteMovingCardsDemo() {
     return (
-        <div className="md:h-[40rem] h-[55rem] rounded-md flex flex-col antialiased bg-gray-900 mt-[4rem] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
+        <div className="md:h-[40rem] h-[55rem] rounded-md flex flex-col antialiased bg-black mt-[4rem] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
             <div className="flex w-full justify-center items-center flex-col mt-[3rem]">
                 <h1 className="md:text-5xl text-3xl text-center mb-[0.5rem] text-white uppercase">What my clients say</h1>
                 <h2 className="md:text-2xl text-xl text-center mb-[2rem] text-white w-3/4">See what my clients have to say about working with me and the results I helped them achieve.</h2>

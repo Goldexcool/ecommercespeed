@@ -9,31 +9,15 @@ import { BackgroundBeamsDemo } from '../component/WhyUs';
 import Loader from '../component/Loader'; // Import the Loader component
 
 const Services = () => {
-    const [loading, setLoading] = useState(true); // State to manage loading
-
-    useEffect(() => {
-        // Simulate a delay for loading (e.g., fetching data)
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 10000); // Set the loading time (e.g., 3 seconds)
-
-        return () => clearTimeout(timer); // Cleanup on component unmount
-    }, []);
 
     return (
         <section>
-            {loading ? (
-                <Loader /> // Show the loader while loading is true
-            ) : (
-                <>
-                    <Header />
-                    <RouteBg Bgtext='Our Services' />
-                    <CardHoverEffectDemo />
-                    <BackgroundBeamsDemo />
-                    <PlaceholdersAndVanishInputDemo />
-                    <Footer />
-                </>
-            )}
+            <Header />
+            <RouteBg Bgtext='Our Services' />
+            <CardHoverEffectDemo />
+            <BackgroundBeamsDemo />
+            <PlaceholdersAndVanishInputDemo />
+            <Footer />
         </section>
     );
 }

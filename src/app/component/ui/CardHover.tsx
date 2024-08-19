@@ -38,7 +38,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-black dark:bg-black block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-mainColor dark:bg-black block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -54,11 +54,11 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card className="flex justify-center items-center">
             <div className="w-full flex justify-center items-center">
-            <FaGlobe className="text-white text-6xl rounded-[10px] p-3 bg-black hover:bg-mainColor flex justify-center items-center w-fit" /> 
+            <FaGlobe className="text-white text-6xl rounded-[10px] p-3 bg-mainColor hover:bg-black flex justify-center items-center w-fit" /> 
             </div>
             <CardTitle className="text-center">{item.title}</CardTitle>
             <CardDescription className="text-center">{item.description}</CardDescription>
-            <Buttontwo className="bg-black hover:bg-mainColor w-full flex justify-center mt-[0.7rem] mb-[0.6rem]" text="Get started "/>
+            <Buttontwo className="bg-mainColor hover:bg-black w-full flex justify-center mt-[0.7rem] mb-[0.6rem]" text="Get started "/>
           </Card>
         </Link>
       ))}

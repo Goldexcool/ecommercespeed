@@ -22,20 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  width: 0.6rem; 
-  background: var(--white);
-}
-
-/* Vertical scrollbar thumb */
-::-webkit-scrollbar-thumb {
-  background: var(--black); 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--saturated); 
-}
 
 .styled-list {
   list-style-type: disc; 

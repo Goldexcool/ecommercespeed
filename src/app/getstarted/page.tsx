@@ -11,34 +11,17 @@ import { ContactPage } from '../component/Contact';
 import { ThreeDCardDemo } from '../component/FeaturedSection';
 import { ContactPageD } from '../component/GtHead';
 import Faq from '../component/Faq';
-import Loader from '../component/Loader'; 
 
 const GetStarted = () => {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 10000); 
-
-        return () => clearTimeout(timer); 
-    }, []);
 
     return (
         <section>
-            {loading ? (
-                <Loader /> 
-            ) : (
-                <>
-                    <Header />
-                    <RouteBg Bgtext='Get Started' />
-                    <ContactPageD />
-                    <Faq />
-                    <PlaceholdersAndVanishInputDemo />
-                    <Footer />
-                </>
-            )}
+            <Header />
+            <RouteBg Bgtext='Get Started' />
+            <ContactPageD />
+            <Faq />
+            <PlaceholdersAndVanishInputDemo />
+            <Footer />
         </section>
     );
 }

@@ -17,7 +17,7 @@ const WhoWeAre = () => {
 
     return (
         <section className='grid lg:grid-cols-2 md:grid-cols-1 gap-10 mx-auto lg:px-[7rem] md:px-10 px-5 mt-[6rem]' id='home'>
-            <div className='flex flex-col justify-center items-start gap-2 md:order-1 order-2' data-aos="fade-up">
+            <div className='flex flex-col justify-between h-full items-start gap-2 md:order-1 order-2' data-aos="fade-up">
                 <div>
                     <h1 className='text-black md:text-[1rem] text-[1.5rem] font-bold md:w-fit w-full'>
                         <span className='text-mainColor'>Who we are</span> 
@@ -31,7 +31,7 @@ const WhoWeAre = () => {
                 </div>
                 <div className='flex gap-5 items-center'>
                     <a href="/">
-                        <Button text="Explore our services" />
+                        <button className='w-fit px-6 py-5 bg-mainColor hover:bg-black md:text-[1.1rem] rounded-[10px] text-[1rem] text-white font-[500]'>Explore Our Services →</button>
                     </a>
                 </div>
             </div>
