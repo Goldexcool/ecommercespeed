@@ -54,11 +54,11 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card className="flex justify-center items-center">
             <div className="w-full flex justify-center items-center">
-            <FaGlobe className="text-white text-6xl rounded-[10px] p-3 bg-mainColor hover:bg-black flex justify-center items-center w-fit" /> 
+              <FaGlobe className="text-white text-6xl rounded-[10px] p-3 bg-mainColor hover:bg-black flex justify-center items-center w-fit" />
             </div>
             <CardTitle className="text-center">{item.title}</CardTitle>
             <CardDescription className="text-center">{item.description}</CardDescription>
-            <Buttontwo className="bg-mainColor hover:bg-black w-full flex justify-center mt-[0.7rem] mb-[0.6rem]" text="Get started "/>
+            <Buttontwo className="bg-mainColor hover:bg-black w-full flex justify-center mt-[0.7rem] mb-[0.6rem]" text="Get started " />
           </Card>
         </Link>
       ))}
@@ -80,7 +80,7 @@ export const Card = ({
         className
       )}
     >
-      <div className="relative z-50 flex items-start space-x-4"> 
+      <div className="relative z-50 flex items-start space-x-4">
         <div className="p-2">{children}</div>
       </div>
     </div>
