@@ -12,10 +12,10 @@ import ryan from '../../../public/ryan.svg'
 
 export function InfiniteMovingCardsDemo() {
     return (
-        <div className="md:h-[40rem] h-[55rem] rounded-md flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
+        <div className="md:h-[40rem] h-[55rem] rounded-md flex flex-col antialiased bg-gray-900 mt-[4rem] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
             <div className="flex w-full justify-center items-center flex-col mt-[3rem]">
-                <h1 className="md:text-5xl text-3xl text-center mb-[0.5rem] text-slate-700 uppercase">What my clients say</h1>
-                <h2 className="md:text-2xl text-xl text-center mb-[2rem] text-slate-700 w-3/4">See what my clients have to say about working with me and the results I helped them achieve.</h2>
+                <h1 className="md:text-5xl text-3xl text-center mb-[0.5rem] text-white uppercase">What my clients say</h1>
+                <h2 className="md:text-2xl text-xl text-center mb-[2rem] text-white w-3/4">See what my clients have to say about working with me and the results I helped them achieve.</h2>
             </div>
             <InfiniteMovingCards
                 items={testimonials}
@@ -23,25 +23,25 @@ export function InfiniteMovingCardsDemo() {
                 speed="slow"
             />
             {/* New Stats Section */}
-            <div className="flex justify-between w-full lg:px-[7rem] md:px-10 px-5 md:mt-[4rem] mt-[4rem] gap-4 mb-[2rem] flex-wrap">
+            <div className="flex justify-between w-full lg:px-[7rem] md:px-10 px-5 md:mt-[4rem] mt-[4rem] gap-4 mb-[2rem] flex-wrap items-center">
                 <div className="flex flex-col items-center">
-                    <Counter end={23000} duration={3000} />
-                    <span className="text-white text-xl">Happy Customers</span>
+                    <Counter end={1000} duration={3000} />
+                    <span className="text-white md:text-xl text-[.9rem]">Happy Customers</span>
                 </div>
                 <hr className="h-[50px] border-l border-gray-400" />
                 <div className="flex flex-col items-center">
-                    <Counter end={450} duration={3000} />
-                    <span className="text-white text-xl">Marketing Experts</span>
+                    <Counter end={700} duration={3000} />
+                    <span className="text-white md:text-xl text-[.9rem]">Marketing Experts</span>
                 </div>
                 <hr className="h-[50px] border-l border-gray-400" />
                 <div className="flex flex-col items-center">
-                    <Counter end={7800000} duration={3000} />
-                    <span className="text-white text-xl">Leads Generated</span>
+                    <Counter end={800000} duration={3000} />
+                    <span className="text-white md:text-xl text-[.9rem]">Leads Generated</span>
                 </div>
                 <hr className="h-[50px] border-l border-gray-400" />
                 <div className="flex flex-col items-center">
-                    <Counter end={3000000000} duration={3000} />
-                    <span className="text-white text-xl">Revenue Driven</span>
+                    <Counter end={7500000} duration={3000} />
+                    <span className="text-white md:text-xl text-[.9rem]">Revenue Driven</span>
                 </div>
             </div>
 

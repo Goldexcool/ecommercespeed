@@ -27,13 +27,11 @@ const WhoWeAre = () => {
                     </h2>
                 </div>
                 <div className='flex flex-col lg:text-[40px] text-[35px] text-main-color-black'>
-                    <h3 className='text-[1rem]'>
-                        At Miratech Digital, our forte lies in digital marketing, where we are committed to not just enhancing your online visibility, but also broadening the scope of your business outreach. With a team of skilled professionals, we delve deep into crafting strategies tailored to your specific needs, ensuring maximum impact. From optimizing your website for search engines to leveraging social media platforms effectively, we leave no stone unturned in elevating your brand presence in the digital realm.
-                    </h3>
+                    <h3 className='text-[1rem]'>At ecommercespeed, we understand that the digital marketplace is constantly evolving. To thrive, you need a partner who not only keeps pace but leads the way. Our team of seasoned eCommerce experts is dedicated to helping your business achieve maximum growth, increased conversions, and unparalleled customer satisfaction. Whether you&apos;re just starting out or looking to scale, ecommercespeed provides the insights, tools, and support you need to succeed.</h3>
                 </div>
                 <div className='flex gap-5 items-center'>
                     <a href="/">
-                        <Button text="Discover More" />
+                        <Button text="Explore our services" />
                     </a>
                 </div>
             </div>

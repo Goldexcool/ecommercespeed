@@ -17,7 +17,7 @@ export function CardHoverEffectDemo() {
 
   return (
     <div 
-      className="w-full lg:px-[7rem] md:px-10 px-5 bg-gray-100 mx-auto"
+      className="w-full lg:px-[7rem] md:px-10 px-5  bg-gray-100 mx-auto"
       data-aos="fade-up"
     >
       <div className="flex flex-col gap-2 items-center">
@@ -36,10 +36,7 @@ export function CardHoverEffectDemo() {
           Connecting customers with your brand.
         </h2>
       </div>
-      {/* <div className="flex flex-col gap-4">
-        <h1 className="md:text-[16px] text-[13px] w-[70%]">we are passionate about harnessing the power of digital marketing to fuel your business growth and success. As a dynamic and innovative team, we strive to be at the forefront of the ever-evolving digital landscape, ensuring that our clients stay ahead of their competitors.</h1>
-        <Button text="Get Started"/>
-      </div> */}
+      
       <HoverEffect 
         items={projects} 
         className=""
@@ -55,36 +52,36 @@ export const projects = [
     title: "Digital Marketing",
     description:
       "Miratech: Amplify your brand, soar online. Expert digital marketing, proven results",
-    link: "https://stripe.com",
+    link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "Email Marketing",
     description:
       "Effortless email marketing for booming sales. Let Miratech weave your winning words.",
-    link: "https://netflix.com",
+    link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "E-commerce",
     description:
       "Boost your ecommerce success with Miratech. Attract, engage, convert – effortlessly.",
-    link: "https://google.com",
+    link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "PPC Management",
     description:
       "Get more leads, spend less. Miratech manages your PPC campaigns for results you can see.",
-    link: "https://meta.com",
+    link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "Content Marketing",
     description:
       "From blogs to website copy, Miratech writes content that gets results. Let’s tell your story.",
-    link: "https://amazon.com",
+    link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "Inbound Marketing",
     description:
       "Inbound marketing that works. Miratech attracts your ideal customers, naturally.",
-    link: "https://microsoft.com",
+    link: "https://www.instagram.com/ecommerce_speed",
   },
 ];

@@ -29,12 +29,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        mainColor: "#2E236C",
-        lighter: "#4A3B8F",
-        darker: "#1C1545",
-        saturated: "#372A83",
-        muted: "#251E56",
-        complementary: "#6C2362",
+        mainColor: "#0000F7",
+        lighter: "#3333FA",
+        darker: "#0000C0",
+        saturated: "#0000B3",
+        muted: "#00008A",
+        complementary: "#0c0b0d",
         black: "#000000",
         white: "#FFFFFF",
       },

@@ -32,11 +32,11 @@ export function Hero() {
                 <motion.p className="font-bold sm:text-[1.4rem] text-[1.3rem] md:text-[1.65rem] text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
                     <TextGenerateEffectDemo />
                     <div className="w-full mt-[0.3rem] text-center flex justify-center items-center">
-                        <h1 className="w-[90%]">Miratech Digital specializes in digital marketing, dedicated to enhancing your online visibility and expanding your business reach.</h1>
+                        <h1 className="w-[90%]">Transform Your eCommerce Experience with Data-Driven Strategies, Cutting-Edge Solutions, and Unmatched Expertise</h1>
                     </div>
                 </motion.p>
                 <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-                    <span>Book a Meeting →</span>
+                    <span>Explore Our Services →</span>
                     <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                 </button>
             </motion.div>

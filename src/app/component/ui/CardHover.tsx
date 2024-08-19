@@ -23,7 +23,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 py-4",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 py-[3rem] place-items-center",
         className
       )}
     >
@@ -31,14 +31,14 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group block p-2 h-full w-full"
+          className="relative group block p-2 h-[400px] w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-saturated dark:bg-saturated block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-black dark:bg-black block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -52,11 +52,13 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <FaGlobe className="text-white text-6xl rounded-[10px] p-3 bg-mainColor" /> 
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-            <Buttontwo className="bg-mainColor" text="Get started"/>
+          <Card className="flex justify-center items-center">
+            <div className="w-full flex justify-center items-center">
+            <FaGlobe className="text-white text-6xl rounded-[10px] p-3 bg-black hover:bg-mainColor flex justify-center items-center w-fit" /> 
+            </div>
+            <CardTitle className="text-center">{item.title}</CardTitle>
+            <CardDescription className="text-center">{item.description}</CardDescription>
+            <Buttontwo className="bg-black hover:bg-mainColor w-full flex justify-center mt-[0.7rem] mb-[0.6rem]" text="Get started "/>
           </Card>
         </Link>
       ))}
@@ -79,7 +81,7 @@ export const Card = ({
       )}
     >
       <div className="relative z-50 flex items-start space-x-4"> 
-        <div className="p-4">{children}</div>
+        <div className="p-2">{children}</div>
       </div>
     </div>
   );
@@ -93,7 +95,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-black md:text-[2rem] font-bold tracking-wide mt-2", className)}>
+    <h4 className={cn("text-black md:text-[2.04rem] text-[1.7rem] font-bold tracking-wide mt-5", className)}>
       {children}
     </h4>
   );
@@ -109,7 +111,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm mb-3",
+        "mt-4 text-black tracking-wide leading-relaxed text-[1.1rem] mb-3",
         className
       )}
     >

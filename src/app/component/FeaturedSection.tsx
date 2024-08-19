@@ -4,33 +4,56 @@ import React, { useEffect } from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d";
 import Link from "next/link";
 import AOS from "aos";
-import 'aos/dist/aos.css'; // Import AOS styles
-
+import 'aos/dist/aos.css';
+import performance from '../../../public/businesswoman-using-tablet-analysis-graph-company-finance-strategy-statistics-success-concept-planning-future-office-room.jpg'
+import rate from '../../../public/office-workers-using-finance-graphs.jpg'
+import ecommerce from '../../../public/online-shopping-shipping-internet-commerce-concept.jpg'
 import consult from '../../../public/consult.avif';
 import seo from '../../../public/seo.avif';
 import socials from '../../../public/socials.avif';
-import webdev from '../../../public/webdev.avif';
+import webdev from '../../../public/online-web-design.jpg';
 
 const cardData = [
   {
     title: "Consulting Services",
     description: "Harness the potential of your business with Ecommercetech's expert consultation services. Enhance performance, optimize efficiency, and reach new heights with personalized strategic guidance. #EcommercetechConsults",
     image: consult,
-    link: "https://twitter.com/mannupaaji",
+    link: "https://www.instagram.com/ecommerce_speed",
     linkText: "Learn more",
   },
   {
     title: "SEO Optimization",
     description: "Amplify your online presence with Ecommercetech's SEO services. Surge in rankings, propel traffic, and reign over search results. Unleash your digital potential with us! #EcommercetechSEO",
     image: seo,
-    link: "https://twitter.com/mannupaaji",
+    link: "https://www.instagram.com/ecommerce_speed",
     linkText: "Optimize now",
   },
   {
     title: "Web Development",
     description: "Transform your online presence with Ecommercetech's Website Development services. Sleek designs, seamless functionality, and user-friendly interfaces that captivate and convert. Elevate your digital experience now! #EcommercetechWeb",
     image: webdev,
-    link: "https://twitter.com/mannupaaji",
+    link: "https://www.instagram.com/ecommerce_speed",
+    linkText: "Start now",
+  },
+  {
+    title: "Performance Marketing",
+    description: "Maximize your marketing efforts with our data-driven approach. We specialize in pay-per-click (PPC) advertising, search engine optimization (SEO), email marketing, and social media campaigns that are designed to increase visibility and drive sales.",
+    image: performance,
+    link: "https://www.instagram.com/ecommerce_speed",
+    linkText: "Start now",
+  },
+  {
+    title: "Conversion Rate Optimization",
+    description: "Turn more visitors into customers with our CRO services. We analyze user behavior, conduct A/B testing, and implement proven tactics to improve your website’s conversion rates, boosting your bottom line.",
+    image: rate,
+    link: "https://www.instagram.com/ecommerce_speed",
+    linkText: "Start now",
+  },
+  {
+    title: "Managed eCommerce Solutions",
+    description: "Let us handle the complexities of running an online store. Our managed services include everything from inventory management and order fulfillment to customer service and technical support, allowing you to focus on growing your business.",
+    image: ecommerce,
+    link: "https://www.instagram.com/ecommerce_speed",
     linkText: "Start now",
   },
 ];
@@ -38,9 +61,9 @@ const cardData = [
 export function ThreeDCardDemo() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Whether animation should happen only once
-      easing: 'ease-in-out', // Easing function for animations
+      duration: 1000, 
+      once: true,
+      easing: 'ease-in-out', 
     });
   }, []);
 
@@ -48,7 +71,7 @@ export function ThreeDCardDemo() {
     <section className="mt-[8rem] lg:px-[7rem] md:px-10 px-5" data-aos="fade-up">
       <div className="flex flex-col w-full justify-center items-center" data-aos="fade-down">
         <h1 className="md:text-[16px] text-[13px] text-mainColor font-bold">OUR FEATURED SERVICES</h1>
-        <h2 className="md:text-[44.2px] text-[30px] text-black mb-[1rem] text-center">&quot;You bring the business, we bring the brilliance.&quot;</h2>
+        <h2 className="md:text-[44.2px] text-[30px] text-black mb-[1rem] text-center">Comprehensive eCommerce Solutions Tailored to Your Needs </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-full">
         {cardData.map((card, index) => (
@@ -57,14 +80,14 @@ export function ThreeDCardDemo() {
               <div>
                 <CardItem
                   translateZ="50"
-                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                  className="md:text-2xl text-xl font-bold text-black dark:text-white"
                 >
                   {card.title}
                 </CardItem>
                 <CardItem
                   as="p"
                   translateZ="60"
-                  className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+                  className="text-black md:text-[1rem]  mt-2 text-sm dark:text-neutral-300"
                 >
                   {card.description}
                 </CardItem>
