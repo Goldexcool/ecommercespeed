@@ -72,7 +72,7 @@ const Header = () => {
 
             <div className={`hamburger-menu fixed top-0 right-0 h-full w-full z-40 bg-white transform transition-transform ease-in-out duration-300 ${navbarOpen ? "translate-x-0" : "translate-x-full"}`}>
                 <div className="close-button p-4 cursor-pointer absolute top-0 right-0">
-                    <MdClose size={35} color="#fff" className="p-2 rounded-full w-10 bg-[#2E236C] h-10 flex items-center justify-center" onClick={handleOpen} />
+                    <MdClose size={35} color="#fff" className="p-2 rounded-full w-10 bg-black h-10 flex items-center justify-center" onClick={handleOpen} />
                 </div>
                 <div className="menu flex flex-col gap-[20px] items-center justify-center p-6 h-[100vh]">
                     <ul className="text-[20px] text-center mt-10">
