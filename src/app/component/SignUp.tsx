@@ -34,11 +34,11 @@ export function PlaceholdersAndVanishInputDemo() {
 
   return (
     <div
-      className="h-[23rem] flex flex-col justify-center items-center lg:px-[7rem] md:px-10 px-5 bg-gray-100"
+      className="h-[23rem] flex flex-col justify-center items-center lg:px-[7rem] md:px-10 px-5 bg-black mt-[3rem]"
       data-aos="fade-up"
     >
       <h2
-        className="mb-5 sm:mb-10 text-2xl text-center sm:text-5xl dark:text-white text-black mt-[4rem]"
+        className="mb-5 sm:mb-10 text-2xl text-center sm:text-5xl dark:text-white text-white mt-[4rem]"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -59,7 +59,7 @@ export function PlaceholdersAndVanishInputDemo() {
           />
           <div className='flex gap-5 items-center'>
             <a href="/">
-              <button className='w-fit px-6 py-4 bg-mainColor hover:bg-black md:text-[1.1rem] rounded-[10px] text-[1rem] text-white font-[500]'>Sign Up →</button>
+              <button className='w-fit px-6 py-3 bg-mainColor hover:bg-saturated md:text-[1.1rem] rounded-[10px] text-[1rem] text-white font-[500]'>Sign Up →</button>
             </a>
           </div>
         </form>
