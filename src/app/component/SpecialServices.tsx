@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Button from './Button';
 import { ButtonsCard } from './ui/Button';
 import Counter from './ui/Counter';
-import Rk from '../../../public/Rk1.jpg'
+import Rk from '../../../public/RKKKK.jpg'
 
 const SpecialService = () => {
     // Initialize AOS
@@ -32,7 +32,7 @@ const SpecialService = () => {
 
     return (
         <section 
-            className='grid lg:grid-cols-2 md:grid-cols-1 gap-10 mx-auto lg:px-[7rem] md:px-10 px-5 md:mt-[6rem] mt-[12rem] mb-[2rem] md:mb-[0rem]' 
+            className='grid lg:grid-cols-2 md:grid-cols-1 gap-10 mx-auto lg:px-[7rem] md:px-10 px-5 md:mt-[6rem] mt-[15rem] mb-[2rem] md:mb-[0rem]' 
             id='home'
         >
             <div 

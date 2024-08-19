@@ -11,7 +11,7 @@ import { InfiniteMovingCardsDemo } from './component/Testimonial';
 import SpecialService from './component/SpecialServices';
 import { PlaceholdersAndVanishInputDemo } from './component/SignUp';
 import Footer from './component/Footer';
-import { TabsDemo } from './component/PortfolioTab';
+// import { TabsDemo } from './component/PortfolioTab';
 import Loader from './component/Loader'; 
 
 const Page = () => {
@@ -39,7 +39,7 @@ const Page = () => {
           <CardHoverEffectDemo />
           <BackgroundBeamsDemo />
           <InfiniteMovingCardsDemo />
-          <TabsDemo />
+          {/* <TabsDemo /> */}
           <SpecialService />
           <PlaceholdersAndVanishInputDemo />
           <Footer />

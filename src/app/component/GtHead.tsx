@@ -24,7 +24,6 @@ export function ContactPageD() {
 
   return (
     <div className="px-5 py-10 lg:px-[7rem] md:px-10 mt-[3rem] w-full ">
-      {/* Header Section */}
       <div className="flex justify-between md:flex-row flex-col mb-12 w-full items-start">
         <div className="md:w-1/2 w-full flex-col gap-2">
           <h1 className="text-3xl font-bold text-mainColor">
