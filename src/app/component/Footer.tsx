@@ -18,7 +18,7 @@ const Footer = () => {
                             <li>Ecommercespeed specializes in digital marketing, dedicated to enhancing your online visibility and expanding your business reach.</li>
                             <div className='flex gap-2 items-start mt-4'>
                                 <a href="https://www.facebook.com/Ecommercespeed"><FaFacebook className="text-mainColor text-4xl group-hover:scale-110 text-center flex transition duration-300" /></a>
-                                <a href='https://www.instagram.com/Ecommercespeed'><FaInstagram className="text-mainColor text-4xl group-hover:scale-110 text-center flex transition duration-300" /></a>
+                                <a href='https://www.instagram.com/ecommerce_speed?igsh=MTU1NDUzbXB4MDh2eg%3D%3D&utm_source=qr'><FaInstagram className="text-mainColor text-4xl group-hover:scale-110 text-center flex transition duration-300" /></a>
                                 <a href='https://wa.link/1opll3'><FaWhatsapp className="text-mainColor text-4xl group-hover:scale-110 text-center flex transition duration-300" /></a>
                             </div>
 
