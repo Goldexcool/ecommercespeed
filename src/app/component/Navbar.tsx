@@ -19,10 +19,13 @@ const Header = () => {
         <header className="flex justify-center items-center w-full " >
             <div className="w-full bg-white left-0 right-0 ease-in-out duration-300 h-[100px] flex items-center">
                 <div className="flex justify-between w-full items-center lg:px-12 px-2">
-                    <div className="flex gap-[5px] cursor-pointer " >
-                        <Image src={Logo} alt='' width={250} height={500}/>
-                        {/* <p className="text-[23px] font-[500] text-white">Ecommercespeed</p> */}
-                    </div>
+                    <Link href={'/'}>
+                        <div className="flex gap-[5px] cursor-pointer " >
+                            <Image src={Logo} alt='' width={250} height={500} />
+                            {/* <p className="text-[23px] font-[500] text-white">Ecommercespeed</p> */}
+                        </div>
+                    </Link>
+
                     <div className="hidden lg:flex justify-between items-center lg:gap-[25px] xl:gap-[25px] text-white">
                         <Link href="/">
                             <div>
@@ -46,6 +49,7 @@ const Header = () => {
                                 <a href="#project" className="text-[18px] font-[500] cursor-pointer text-mainColor hover:text-black">Contact us</a>
                             </div>
                         </Link>
+
 
                         <Link href="/getstarted">
                             <div className="flex items-center cursor-pointer">

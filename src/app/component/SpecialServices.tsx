@@ -10,12 +10,11 @@ import Counter from './ui/Counter';
 import Rk from '../../../public/RKKKK.jpg'
 
 const SpecialService = () => {
-    // Initialize AOS
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration in milliseconds
-            easing: 'ease-in-out', // Easing function
-            once: true, // Whether animation should happen only once
+            duration: 1000, 
+            easing: 'ease-in-out',
+            once: true, 
         });
     }, []);
     const [count, setCount] = React.useState(0);
@@ -73,7 +72,7 @@ const SpecialService = () => {
             >
                 <Image src={Rk} alt='hero' className='w-full h-fit' />
                 <div
-                    className='absolute right-4 top-2 md:w-[200px] md:h-[200px] w-[150px] h-[150px] bg-darker flex flex-col justify-center items-center rounded-full text-center'
+                    className='absolute md:right-4 right-2 top-2 md:w-[200px] md:h-[200px] w-[150px] h-[150px]  bg-darker flex flex-col justify-center items-center rounded-full text-center'
                     data-aos="zoom-in"
                     data-aos-delay="300"
                 >

@@ -14,8 +14,8 @@ export function InfiniteMovingCardsDemo() {
     return (
         <div className="md:h-[40rem] h-[55rem] rounded-md flex flex-col antialiased bg-black mt-[4rem] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
             <div className="flex w-full justify-center items-center flex-col mt-[3rem]">
-                <h1 className="md:text-5xl text-3xl text-center mb-[0.5rem] text-white uppercase">What my clients say</h1>
-                <h2 className="md:text-2xl text-xl text-center mb-[2rem] text-white w-3/4">See what my clients have to say about working with me and the results I helped them achieve.</h2>
+                <h1 className="md:text-5xl text-3xl text-center mb-[0.5rem] text-white uppercase font-bold">What my clients say</h1>
+                <h2 className="md:text-2xl text-xl text-center mb-[2rem] text-white w-3/4 font-[600]">See what my clients have to say about working with me and the results I helped them achieve.</h2>
             </div>
             <InfiniteMovingCards
                 items={testimonials}
@@ -50,50 +50,52 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
     {
-        topText: "Amazing Results with Dynamic Web Premium Web Design Services.",
+        topText: "Exceptional Website Design and Development Services",
         quote:
-            "Dynamic Web is a top-notch web designer who created a stunning website for my business. He was attentive to my needs and provided excellent customer service throughout the entire process. I highly recommend his services.",
-        name: "John Smith",
+            "Working with Ecommercespeed was a game-changer for our online presence. They delivered a modern, user-friendly website that perfectly aligns with our brand. The team's attention to detail and commitment to quality is unmatched.",
+        name: "John Doe",
         image: john,
-        title: "ABC Company",
+        title: "Marketing Manager, BrightSide Media",
     },
     {
-        topText: "Expert Webflow and SEO Services: Excellent Work, Great Results.",
+        topText: "Top-notch SEO Optimization Services",
         quote:
-            "Working with Dynamic Webb on my website redesign was a fantastic experience. He was able to take my vision and turn it into a beautiful and functional website. His attention to detail and creative approach is unmatched. I couldn't be happier with the end result.",
+            "Ecommercespeed helped us drastically improve our search engine rankings. Their expertise in SEO strategies has driven more organic traffic to our site, resulting in a significant boost in leads and sales.",
         name: "David Kim",
         image: david,
-        title: "Design Inc.",
+        title: "CEO, WebTech Solutions",
     },
     {
-        topText: "Professional, Collaborative Web Design Experience with Arik.",
+        topText: "Effective Digital Marketing Strategies",
         quote:
-            "I had the pleasure of working with Arik on a website development project and was blown away by his expertise and professionalism. He made the process seamless and delivered a website that exceeded our expectations. I highly recommend Arik for all your web development needs.",
+            "The digital marketing strategies implemented by Ecommercespeed have been instrumental in growing our business. Their data-driven approach and deep understanding of the market helped us reach a wider audience and increase our conversion rates.",
         name: "Karen Lee",
         image: lee,
-        title: "Redwood Technologies",
+        title: "Head of Marketing, GreenWave Digital",
     },
     {
-        topText: "Expertise in Web Design: Second to None with Arik.",
-        quote: "Arik is not only an exceptional web designer, but also a pleasure to work with. He took the time to understand my business and its unique needs, and created a website that perfectly represents my brand. I highly recommend Arik's services to anyone looking for a top-quality web designer.",
+        topText: "Innovative Email Marketing Campaigns",
+        quote:
+            "Our email marketing campaigns have seen a significant improvement since partnering with Ecommercespeed. Their innovative strategies and creative content have resulted in higher open rates and increased engagement.",
         name: "Andrew Thompson",
         image: andrew,
-        title: "Silverstone Corporation",
+        title: "CMO, SwiftMail Solutions",
     },
     {
-        topText: "Web Design and Content Solutions: Stand Out from the Crowd.",
+        topText: "Engaging Content Marketing Solutions",
         quote:
-            "Arik's SEO services have helped my business improve its online presence and increase traffic to our website. He is knowledgeable, professional, and provides excellent results. I highly recommend him for all your SEO needs.",
+            "Ecommercespeed has transformed our content marketing efforts. Their ability to craft compelling content that resonates with our target audience has elevated our brand and driven meaningful engagement across all channels.",
         name: "Emily Davis",
         image: emily,
-        title: "Greenway Industries",
+        title: "Content Strategist, BlueSky Communications",
     },
     {
-        topText: "High-Quality Web Design: Exceptional Attention to Detail with Arik.",
+        topText: "Comprehensive E-commerce Solutions",
         quote:
-            "Arik's development services are top-notch. He is able to take complex ideas and turn them into functional, user-friendly websites. His attention to detail and commitment to customer satisfaction are unmatched. I highly recommend Arik for all your web development needs.",
+            "The e-commerce platform developed by Ecommercespeed has been a cornerstone of our online success. Their technical expertise and customer-centric approach ensured a seamless shopping experience for our customers.",
         name: "Ryan Chen",
         image: ryan,
-        title: "Golden Gate Solutions",
+        title: "Founder, RetailEdge Online",
     },
 ];
+

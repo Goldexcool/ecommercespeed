@@ -14,7 +14,7 @@ export function DotBackgroundDemo() {
             Let us show you the power of marketing communication.
           </p>
           <p className="text-lg text-neutral-300">
-            Miratech digital agency provides strategic planning that aligns with your business objectives. Let&apos;s get your business to the targeted level you always dreamed about with strategic and calculated digital measures that drive real sales.
+          Ecommercespeed digital agency provides strategic planning that aligns with your business objectives. Let&apos;s get your business to the targeted level you always dreamed about with strategic and calculated digital measures that drive real sales.
           </p>
           <div className='flex gap-5 items-center'>
             <a href="/">

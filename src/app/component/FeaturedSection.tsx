@@ -70,8 +70,8 @@ export function ThreeDCardDemo() {
   return (
     <section className="mt-[8rem] lg:px-[7rem] md:px-10 px-5" data-aos="fade-up">
       <div className="flex flex-col w-full justify-center items-center" data-aos="fade-down">
-        <h1 className="md:text-[16px] text-[13px] text-mainColor font-bold">OUR FEATURED SERVICES</h1>
-        <h2 className="md:text-[44.2px] text-[30px] text-black mb-[1rem] text-center">Comprehensive eCommerce Solutions Tailored to Your Needs </h2>
+        <h1 className="md:text-[16px] text-[13px] text-mainColor font-[800]">OUR FEATURED SERVICES</h1>
+        <h2 className="md:text-[44.2px] text-[30px] text-black mb-[1rem] font-[600] text-center">Comprehensive eCommerce Solutions Tailored to Your Needs </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-full">
         {cardData.map((card, index) => (

@@ -51,37 +51,37 @@ export const projects = [
   {
     title: "Digital Marketing",
     description:
-      "Miratech: Amplify your brand, soar online. Expert digital marketing, proven results",
+      "Ecommercespeed: Amplify your brand, soar online. Expert digital marketing, proven results",
     link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "Email Marketing",
     description:
-      "Effortless email marketing for booming sales. Let Miratech weave your winning words.",
+      "Effortless email marketing for booming sales. Let Ecommercespeed weave your winning words.",
     link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "E-commerce",
     description:
-      "Boost your ecommerce success with Miratech. Attract, engage, convert – effortlessly.",
+      "Boost your ecommerce success with Ecommercespeed. Attract, engage, convert – effortlessly.",
     link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "PPC Management",
     description:
-      "Get more leads, spend less. Miratech manages your PPC campaigns for results you can see.",
+      "Get more leads, spend less. Ecommercespeed manages your PPC campaigns for results you can see.",
     link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "Content Marketing",
     description:
-      "From blogs to website copy, Miratech writes content that gets results. Let’s tell your story.",
+      "From blogs to website copy, Ecommercespeed writes content that gets results. Let’s tell your story.",
     link: "https://www.instagram.com/ecommerce_speed",
   },
   {
     title: "Inbound Marketing",
     description:
-      "Inbound marketing that works. Miratech attracts your ideal customers, naturally.",
+      "Inbound marketing that works. Ecommercespeed attracts your ideal customers, naturally.",
     link: "https://www.instagram.com/ecommerce_speed",
   },
 ];
