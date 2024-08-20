@@ -17,11 +17,6 @@ export function ContactPage() {
     });
   }, []);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-[7rem] md:px-10 px-5 mx-auto p-8 mt-[3rem]">
       {/* Left Section - Image */}
@@ -30,8 +25,6 @@ export function ContactPage() {
           src={contactImage}
           alt="Contact us illustration"
           className="rounded-lg shadow-lg h-full w-full"
-          // width={500}
-          // height={500}
         />
       </div>
 
@@ -45,25 +38,31 @@ export function ContactPage() {
           get back to you as soon as possible.
         </p>
 
-        <form className="my-8" onSubmit={handleSubmit}>
+        <form
+          className="my-8"
+          action="https://formspree.io/f/xldrwkna"
+          method="POST"
+        >
           <LabelInputContainer className="mb-4" data-aos="fade-up" data-aos-delay="200">
             <Label htmlFor="fullname">Full Name</Label>
-            <Input id="fullname" placeholder="John Doe" type="text" />
+            <Input id="fullname" name="fullname" placeholder="John Doe" type="text" required />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4" data-aos="fade-up" data-aos-delay="400">
             <Label htmlFor="email">Email Address</Label>
-            <Input id="email" placeholder="johndoe@example.com" type="email" />
+            <Input id="email" name="email" placeholder="johndoe@example.com" type="email" required />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4" data-aos="fade-up" data-aos-delay="600">
             <Label htmlFor="subject">Subject</Label>
-            <Input id="subject" placeholder="Your subject here" type="text" />
+            <Input id="subject" name="subject" placeholder="Your subject here" type="text" required />
           </LabelInputContainer>
           <LabelInputContainer className="mb-8" data-aos="fade-up" data-aos-delay="800">
             <Label htmlFor="message">Message</Label>
             <textarea
               id="message"
+              name="message"
               placeholder="Your message here..."
               rows={4}
+              required
               className="flex h-28 w-full border-none bg-gray-50 dark:bg-zinc-800 text-black dark:text-white shadow-input rounded-md px-3 py-2 text-sm placeholder:text-neutral-400 dark:placeholder:text-neutral-600 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600"
             />
           </LabelInputContainer>
@@ -105,3 +104,4 @@ const LabelInputContainer = ({
     </div>
   );
 };
+  
